@@ -1,0 +1,4 @@
+Timestamp,Mode,Algorithm,SigLen_Bytes,PubKeyLen_Bytes,HeaderOverhead_Pct,SigVerify_us,DownloadSize_Bytes,DownloadTime_s,DownloadSpeed_MBps,SliceTime_ms,StreamDecrypt_ms,TarExtract_ms,FlashDuration_ms,FlashSpeed_MBps,TotalPipeline_ms,SigVerify_Pct_Downtime
+1792584104,ZeroCopy_IOV_Prefetch,FN-DSA-512,666,897,26.79,462,35690,0.109,0.31,163,25,41,6830,0.00,7025,0.0066
+1792584019,ZeroCopy_IOV_Prefetch,FN-DSA-512,666,897,26.79,212,35690,0.135,0.25,90,10,19,6829,0.00,7003,0.0030
+1792584067,ZeroCopy_IOV_Prefetch,FN-DSA-512,666,897,26.79,213,23810285,2.563,8.86,94,1381,5429,27810,18.76,37612,0.0006

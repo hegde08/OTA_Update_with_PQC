@@ -1,0 +1,2 @@
+Timestamp,Mode,Algorithm,SigLen_Bytes,PubKeyLen_Bytes,HeaderOverhead_Pct,SigVerify_us,DownloadSize_Bytes,DownloadTime_s,DownloadSpeed_MBps,SliceTime_ms,StreamDecrypt_ms,TarExtract_ms,FlashDuration_ms,FlashSpeed_MBps,TotalPipeline_ms,SigVerify_Pct_Downtime
+1792584049,ZeroCopy_IOV_Prefetch,ECDSA_secp256r1,64,178,2.57,3876,23810285,4.901,4.63,92,1382,5448,27807,18.76,39963,0.0097
