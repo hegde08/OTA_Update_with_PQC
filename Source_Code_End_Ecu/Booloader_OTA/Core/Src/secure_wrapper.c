@@ -1,0 +1,166 @@
+/*
+ * secure_wrapper.c
+ *
+ *  Created on: Apr 25, 2026
+ *      Author: hegde
+ */
+
+#ifndef SRC_SECURE_WRAPPER_C_
+#define SRC_SECURE_WRAPPER_C_
+
+#include "secure_wrapper.h"
+
+#endif /* SRC_SECURE_WRAPPER_C_ */
+
+#include "cmox_crypto.h"
+
+
+/* Define the ECC handle and the math engine */
+cmox_ecc_handle_t EccCtx;
+static cmox_cbc_handle_t cbc_ctx;
+static cmox_cipher_handle_t *pCipher = NULL;
+
+
+/* The size depends on the curve */
+#define ECC_WORKING_AREA_SIZE 2048
+uint8_t WorkingArea[ECC_WORKING_AREA_SIZE / sizeof(uint8_t)] __attribute__((aligned(4)));
+
+
+static const uint8_t FIXED_AES_KEY[AES_256_KEY_SIZE] = {0x00 ,0x11 ,0x22 ,0x33 ,0x44 ,0x55 ,0x66 ,0x77 ,0x88 ,0x99 ,0xAA ,0xBB ,0xCC ,0xDD ,0xEE ,0xFF ,0x00 ,0x11 ,0x22 ,0x33 ,0x44 ,0x55 ,0x66 ,0x77 ,0x88 ,0x99 ,0xAA ,0xBB ,0xCC ,0xDD ,0xEE ,0xFF};
+
+
+static const uint8_t FIXED_AES_IV[CBC_IV_SIZE] = {
+    0x00, 0x11, 0x22, 0x33, 0x44, 0x55, 0x66, 0x77,
+    0x88, 0x99, 0xAA, 0xBB, 0xCC, 0xDD, 0xEE, 0xFF
+};
+
+
+/**
+  * @brief Call ECC Init function to intialize the working area
+  * @retval None
+  */
+void init_crypto_system(void)
+{
+
+	(void)cmox_initialize(NULL);
+
+	pCipher = cmox_cbc_construct(&cbc_ctx,
+			CMOX_AESSMALL_CBC_DEC);
+
+	(void)cmox_cipher_init(pCipher);
+
+	(void)cmox_cipher_setKey(pCipher,
+			FIXED_AES_KEY,
+			AES_256_KEY_SIZE);
+
+	(void)cmox_cipher_setIV(pCipher, FIXED_AES_IV, CBC_IV_SIZE);
+
+    /* Construct the ECC handle */
+    cmox_ecc_construct(&EccCtx,                  // The handle
+    					CMOX_MATH_FUNCS_FAST, // Math engine
+                        WorkingArea,              // Buffer
+                        sizeof(WorkingArea));     // Buffer size
+}
+
+
+/**
+  * @brief Calculation of hash
+  * param[in] uint32_t  startAddress    start address of data
+  * param[in] uint16_t  size            Length of hash calculation area
+  * param[out] uint8_t* output_digest	Hash output
+  * @retval None
+  */
+Std_Security_Return_type Calculate_Firmware_Hash(uint8_t *output_digest, uint32_t startAddress, uint16_t size)
+{
+    cmox_hash_retval_t retval;
+    size_t generated_length = 0;
+
+    /* 1. Create a pointer that looks directly at the Flash memory
+     * 2. Execute the Single-Shot API
+     * 3. Check the result and set the return value
+     *  */
+    const uint8_t *firmware_in_flash = (const uint8_t *)startAddress;
+
+    retval = cmox_hash_compute(
+        CMOX_SHA256_ALGO,          // The algorithm to use
+        firmware_in_flash,         // Pointer directly to Flash memory
+		size,    // 32,768 bytes
+        output_digest,             // The array where the 32-byte hash will be saved
+        32,                        // We expect a 32-byte digest for SHA-256
+        &generated_length          // ST requires this parameter to confirm length
+    );
+
+    if (retval != CMOX_HASH_SUCCESS)
+    {
+    	return SEC_NOT_OK;
+    }
+    else
+    {
+    	return SEC_OK;
+    }
+}
+
+/**
+  * @brief Singature verification wrapper
+  * param[in]  uint8_t*  outputDigest    Input hash for signature verification
+  * param[in]  uint8_t*  signatureRec	 Signature input for verification
+  * @retval None
+  */
+Std_Security_Return_type Calculate_Signature(uint8_t* outputDigest, uint8_t* signatureRec)
+{
+	uint32_t fault_check = 0;
+	cmox_ecc_retval_t status;
+
+    /* 1. Call signature verifiaction function
+     * 2. Check the result and set the return value
+     *  */
+
+
+	status = cmox_ecdsa_verify(
+	    &EccCtx,                        // Your initialized ECC handle
+	    CMOX_ECC_SECP256R1_HIGHMEM,     // Matches NIST256p
+		PUB_KEY_PTR,                      // Raw Public Key bytes
+	    64,                             // PubKey length (uncompressed is usually 64)
+	    outputDigest,                   // Your 32-byte hash
+	    32,                             // Digest length
+	    signatureRec,                   // The 64-byte R+S signature
+	    64,                             // Signature length
+	    &fault_check                    // Fault check variable
+	);
+
+	if ((status == CMOX_ECC_AUTH_SUCCESS) && (fault_check == CMOX_ECC_AUTH_SUCCESS))
+	{
+	    return SEC_OK;
+	}
+	else
+	{
+	   return SEC_NOT_OK;
+	}
+}
+
+Std_Security_Return_type Application_Decrypt(const uint8_t *encrypted_chunk, uint8_t* plain_text, uint16_t chunk_len)
+{
+	size_t computed_size = 0;
+	/* 1. Decrypt chunk */
+	cmox_cipher_retval_t status = cmox_cipher_append(
+	        pCipher,
+	        encrypted_chunk,
+	        chunk_len,
+			plain_text,
+	        &computed_size
+	    );
+
+	if (status != CMOX_CIPHER_SUCCESS || computed_size != chunk_len)
+	{
+	    return SEC_NOT_OK;
+	}
+	return SEC_OK;
+}
+
+void Decrypt_Finalize(void)
+{
+    if (pCipher != NULL) {
+        cmox_cipher_cleanup(pCipher);
+        pCipher = NULL;
+    }
+}

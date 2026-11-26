@@ -1,0 +1,5 @@
+../Core/Src/secure_wrapper.c:42:6:init_crypto_system	1
+../Core/Src/secure_wrapper.c:73:26:Calculate_Firmware_Hash	2
+../Core/Src/secure_wrapper.c:109:26:Calculate_Signature	3
+../Core/Src/secure_wrapper.c:141:26:Application_Decrypt	3
+../Core/Src/secure_wrapper.c:160:6:Decrypt_Finalize	2

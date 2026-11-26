@@ -1,3 +1,7 @@
 Source_Code_Gateway/project_minimal/images/build/rootfs.img
+Source_Code_End_Ecu/Application_OTA/Debug
+Source_Code_End_Ecu/Bootloader_OTA/Debug
+*.launch
+*.settings
 *:Zone.Identifier
 *.kev
