@@ -1,0 +1,8 @@
+authorityKeyIdentifier=keyid,issuer
+basicConstraints=critical,CA:FALSE
+keyUsage=critical,digitalSignature
+extendedKeyUsage=serverAuth
+subjectAltName=@alt_names
+[alt_names]
+DNS.1=downloadserver
+IP.1=192.168.0.88

@@ -808,5 +808,5 @@ LOAD /home/hegde/project/qnx_sdp/target/qnx/aarch64le/lib/crtn.o
  *(.note.GNU-stack)
  *(.gnu_debuglink)
  *(.gnu.lto_*)
-OUTPUT(/tmp/file5eLOR7_qcc_35514/tmp_qcc_35514 elf64-littleaarch64)
+OUTPUT(/tmp/fileX0eBGj_qcc_36916/tmp_qcc_36916 elf64-littleaarch64)
 LOAD linker stubs
