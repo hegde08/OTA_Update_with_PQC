@@ -1,0 +1,8 @@
+STATE=Desktop
+INSTALLDIR=aarch64le/usr/lib/
+INSTALLNAME=libdma-bcm2711.a
+NAME=libdma-bcm2711.a
+USER=hegde
+HOST=Shridharkrupa
+DATE=2026/08/22-19:05:13-UTC
+DESCRIPTION=DMA engine driver

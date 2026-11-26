@@ -1,0 +1,8 @@
+STATE=Desktop
+INSTALLDIR=aarch64le/sbin/
+INSTALLNAME=devc-serminiuart
+NAME=devc-serminiuart
+USER=hegde
+HOST=Shridharkrupa
+DATE=2026/11/26-13:36:15-UTC
+DESCRIPTION=Character device driver for miniuart aux controller

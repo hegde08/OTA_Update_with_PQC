@@ -1,0 +1,4 @@
+intr.o: \
+ /home/hegde/project/qnxworkspace/project_minimal/src/hardware/spi/bcm2711/intr.c \
+ /home/hegde/project/qnxworkspace/project_minimal/src/hardware/spi/bcm2711/bcm2711spi.h \
+ /home/hegde/project/qnxworkspace/project_minimal/src/hardware/spi/../../../install/usr/include/aarch64/bcm2711.h

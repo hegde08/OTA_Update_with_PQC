@@ -1,0 +1,6 @@
+init.o: \
+ /home/hegde/project/qnxworkspace/project_minimal/src/hardware/devc/serpl011/init.c \
+ /home/hegde/project/qnxworkspace/project_minimal/src/hardware/devc/serpl011/externs.h \
+ /home/hegde/project/qnxworkspace/project_minimal/src/hardware/devc/serpl011/variant.h \
+ /home/hegde/project/qnxworkspace/project_minimal/src/hardware/devc/../../../install/usr/include/hw/dma.h \
+ /home/hegde/project/qnxworkspace/project_minimal/src/hardware/devc/serpl011/proto.h

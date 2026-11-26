@@ -1,0 +1,2 @@
+memmove.o: \
+ /home/hegde/project/qnxworkspace/project_minimal/src/hardware/startup/lib/memmove.c

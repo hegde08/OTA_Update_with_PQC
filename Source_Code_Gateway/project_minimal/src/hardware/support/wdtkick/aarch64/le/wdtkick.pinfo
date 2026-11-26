@@ -1,0 +1,8 @@
+STATE=Desktop
+INSTALLDIR=aarch64le/bin/
+INSTALLNAME=wdtkick
+NAME=wdtkick
+USER=hegde
+HOST=Shridharkrupa
+DATE=2026/08/22-19:05:31-UTC
+DESCRIPTION=Generic watchdog kick utility

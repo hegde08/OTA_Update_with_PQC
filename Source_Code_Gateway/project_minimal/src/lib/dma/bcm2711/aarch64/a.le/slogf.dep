@@ -1,0 +1,4 @@
+slogf.o: \
+ /home/hegde/project/qnxworkspace/project_minimal/src/lib/dma/bcm2711/slogf.c \
+ /home/hegde/project/qnxworkspace/project_minimal/src/lib/dma/bcm2711/bcm2711_dmac.h \
+ /home/hegde/project/qnxworkspace/project_minimal/src/lib/dma/public/hw/dma.h

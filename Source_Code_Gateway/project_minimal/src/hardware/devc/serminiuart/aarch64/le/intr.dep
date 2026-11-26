@@ -1,0 +1,5 @@
+intr.o: \
+ /home/hegde/project/qnxworkspace/project_minimal/src/hardware/devc/serminiuart/intr.c \
+ /home/hegde/project/qnxworkspace/project_minimal/src/hardware/devc/serminiuart/externs.h \
+ /home/hegde/project/qnxworkspace/project_minimal/src/hardware/devc/serminiuart/mini_uart.h \
+ /home/hegde/project/qnxworkspace/project_minimal/src/hardware/devc/serminiuart/proto.h

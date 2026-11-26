@@ -1,0 +1,352 @@
+Using compatibility profile '7.0.0'
+Compatibility:
+   [+] ACLs
+   [+] Iextra
+   [+] Name encryption
+   [+] Superblock copies
+   [+] Inode checksums
+   [+] Oversized bitmaps
+   Default block size: 4096
+   Maximum block size: 32768
+Creating '/'...
+Creating '.boot/'...
+Leaving '.boot/'.
+Creating 'bin/'...
+Adding symlink 'sh' -> '/bin/ksh'
+Adding 'wdtkick'
+Adding 'login'
+Adding 'su'
+Adding 'confstr'
+Adding 'df'
+Adding 'hostname'
+Adding 'kill'
+Adding 'ksh'
+Adding 'mount'
+Adding 'on'
+Adding 'pidin'
+Adding 'slay'
+Adding 'slog2info'
+Adding 'slogger2'
+Adding 'sync'
+Adding 'umount'
+Adding 'waitfor'
+Adding symlink 'cat' -> '/usr/bin/toybox'
+Adding symlink 'chmod' -> '/usr/bin/toybox'
+Adding symlink 'cp' -> '/usr/bin/toybox'
+Adding symlink 'dd' -> '/usr/bin/toybox'
+Adding symlink 'echo' -> '/usr/bin/toybox'
+Adding symlink 'ln' -> '/usr/bin/toybox'
+Adding symlink 'ls' -> '/usr/bin/toybox'
+Adding symlink 'mkdir' -> '/usr/bin/toybox'
+Adding symlink 'mv' -> '/usr/bin/toybox'
+Adding symlink 'pwd' -> '/usr/bin/toybox'
+Adding symlink 'rm' -> '/usr/bin/toybox'
+Adding symlink 'sed' -> '/usr/bin/toybox'
+Adding symlink 'uname' -> '/usr/bin/toybox'
+Adding 'gpio-bcm2711'
+Adding 'mbox-bcm2711'
+Adding 'Verifier'
+Adding 'Writer'
+Adding 'download_agent'
+Leaving 'bin/'.
+Creating 'sbin/'...
+Adding 'devc-serminiuart'
+Adding 'devc-serpl011'
+Adding 'devb-sdmmc-bcm2711'
+Adding 'dhcpcd'
+Adding 'dhcpcd-run-hooks'
+Creating 'dhcpcd-hooks/'...
+Adding '20-resolv.conf'
+Leaving 'dhcpcd-hooks/'.
+Adding 'ifconfig'
+Adding 'io-sock'
+Adding 'pfctl'
+Adding 'ping'
+Adding 'route'
+Adding 'sysctl'
+Adding 'devc-pty'
+Adding 'mqueue'
+Adding 'pipe'
+Adding 'shutdown'
+Leaving 'sbin/'.
+Creating 'lib/'...
+Creating 'dll/'...
+Creating 'pci/'...
+Leaving 'pci/'.
+Adding 'io-blk.so'
+Adding 'cam-disk.so'
+Adding 'cam-cdrom.so'
+Adding 'fs-qnx6.so'
+Adding 'fs-dos.so'
+Adding 'devs-genet.so'
+Adding 'devs-qwdi_dhd_sdio-2_11-rpi4.so'
+Adding 'devs-em.so'
+Adding 'devs-ix.so'
+Adding 'devs-re.so'
+Adding 'devs-igc.so'
+Adding 'devs-axe.so'
+Adding 'devs-axge.so'
+Adding 'devs-cdce.so'
+Adding 'devs-smsc.so'
+Adding 'mods-phy.so'
+Adding 'mods-fdt.so'
+Adding 'mods-phy_fdt.so'
+Adding 'qcrypto-openssl-3.so'
+Leaving 'dll/'.
+Adding 'libcam.so'
+Adding 'libsocket.so.4'
+Adding symlink 'libsocket.so' -> '/lib/libsocket.so.4'
+Adding 'libjail.so.1'
+Adding 'libqh.so'
+Adding 'libregex.so'
+Adding 'libsecpol.so'
+Adding 'libslog2parse.so'
+Adding 'libslog2shim.so'
+Adding 'libslog2.so'
+Adding 'libtracelog.so'
+Adding 'libcurl.so.12'
+Adding 'libcares.so.8'
+Adding 'libc.so'
+Adding 'libcatalog.so'
+Adding 'libdevice-publisher.so'
+Adding 'libgcc_s.so'
+Adding 'libm.so'
+Adding 'libfsnotify.so'
+Leaving 'lib/'.
+Creating 'usr/'...
+Creating 'bin/'...
+Adding 'netstat'
+Adding 'sockstat'
+Adding 'vmstat'
+Adding 'pdebug'
+Adding 'scp'
+Adding 'ssh'
+Adding 'ssh-keygen'
+Adding 'passwd'
+Adding 'getconf'
+Adding 'hd'
+Adding 'ldd'
+Adding 'setconf'
+Adding 'top'
+Adding 'use'
+Adding 'toybox'
+Adding symlink 'ascii' -> '/usr/bin/toybox'
+Adding symlink 'base64' -> '/usr/bin/toybox'
+Adding symlink 'basename' -> '/usr/bin/toybox'
+Adding symlink 'bc' -> '/usr/bin/toybox'
+Adding symlink 'bunzip2' -> '/usr/bin/toybox'
+Adding symlink 'bzcat' -> '/usr/bin/toybox'
+Adding symlink 'cal' -> '/usr/bin/toybox'
+Adding symlink 'chgrp' -> '/usr/bin/toybox'
+Adding symlink 'chown' -> '/usr/bin/toybox'
+Adding symlink 'cksum' -> '/usr/bin/toybox'
+Adding symlink 'clear' -> '/usr/bin/toybox'
+Adding symlink 'cmp' -> '/usr/bin/toybox'
+Adding symlink 'comm' -> '/usr/bin/toybox'
+Adding symlink 'cpio' -> '/usr/bin/toybox'
+Adding symlink 'crc32' -> '/usr/bin/toybox'
+Adding symlink 'cut' -> '/usr/bin/toybox'
+Adding symlink 'date' -> '/usr/bin/toybox'
+Adding symlink 'diff' -> '/usr/bin/toybox'
+Adding symlink 'dirname' -> '/usr/bin/toybox'
+Adding symlink 'dos2unix' -> '/usr/bin/toybox'
+Adding symlink 'du' -> '/usr/bin/toybox'
+Adding symlink 'egrep' -> '/usr/bin/toybox'
+Adding symlink 'env' -> '/usr/bin/toybox'
+Adding symlink 'expand' -> '/usr/bin/toybox'
+Adding symlink 'expr' -> '/usr/bin/toybox'
+Adding symlink 'false' -> '/usr/bin/toybox'
+Adding symlink 'fgrep' -> '/usr/bin/toybox'
+Adding symlink 'file' -> '/usr/bin/toybox'
+Adding symlink 'find' -> '/usr/bin/toybox'
+Adding symlink 'grep' -> '/usr/bin/toybox'
+Adding symlink 'groups' -> '/usr/bin/toybox'
+Adding symlink 'gunzip' -> '/usr/bin/toybox'
+Adding symlink 'gzip' -> '/usr/bin/toybox'
+Adding symlink 'head' -> '/usr/bin/toybox'
+Adding symlink 'id' -> '/usr/bin/toybox'
+Adding symlink 'install' -> '/usr/bin/toybox'
+Adding symlink 'link' -> '/usr/bin/toybox'
+Adding symlink 'logname' -> '/usr/bin/toybox'
+Adding symlink 'md5sum' -> '/usr/bin/toybox'
+Adding symlink 'mkfifo' -> '/usr/bin/toybox'
+Adding symlink 'mktemp' -> '/usr/bin/toybox'
+Adding symlink 'more' -> '/usr/bin/toybox'
+Adding symlink 'nl' -> '/usr/bin/toybox'
+Adding symlink 'nohup' -> '/usr/bin/toybox'
+Adding symlink 'od' -> '/usr/bin/toybox'
+Adding symlink 'paste' -> '/usr/bin/toybox'
+Adding symlink 'patch' -> '/usr/bin/toybox'
+Adding symlink 'printenv' -> '/usr/bin/toybox'
+Adding symlink 'printf' -> '/usr/bin/toybox'
+Adding symlink 'readlink' -> '/usr/bin/toybox'
+Adding symlink 'realpath' -> '/usr/bin/toybox'
+Adding symlink 'rmdir' -> '/usr/bin/toybox'
+Adding symlink 'seq' -> '/usr/bin/toybox'
+Adding symlink 'sha1sum' -> '/usr/bin/toybox'
+Adding symlink 'sleep' -> '/usr/bin/toybox'
+Adding symlink 'sort' -> '/usr/bin/toybox'
+Adding symlink 'split' -> '/usr/bin/toybox'
+Adding symlink 'stat' -> '/usr/bin/toybox'
+Adding symlink 'strings' -> '/usr/bin/toybox'
+Adding symlink 'tail' -> '/usr/bin/toybox'
+Adding symlink 'tar' -> '/usr/bin/toybox'
+Adding symlink 'tee' -> '/usr/bin/toybox'
+Adding symlink 'test' -> '/usr/bin/toybox'
+Adding symlink 'time' -> '/usr/bin/toybox'
+Adding symlink 'timeout' -> '/usr/bin/toybox'
+Adding symlink 'touch' -> '/usr/bin/toybox'
+Adding symlink 'true' -> '/usr/bin/toybox'
+Adding symlink 'truncate' -> '/usr/bin/toybox'
+Adding symlink 'tty' -> '/usr/bin/toybox'
+Adding symlink 'uniq' -> '/usr/bin/toybox'
+Adding symlink 'unix2dos' -> '/usr/bin/toybox'
+Adding symlink 'unlink' -> '/usr/bin/toybox'
+Adding symlink 'uudecode' -> '/usr/bin/toybox'
+Adding symlink 'uuencode' -> '/usr/bin/toybox'
+Adding symlink 'uuidgen' -> '/usr/bin/toybox'
+Adding symlink 'wc' -> '/usr/bin/toybox'
+Adding symlink 'which' -> '/usr/bin/toybox'
+Adding symlink 'whoami' -> '/usr/bin/toybox'
+Adding symlink 'xargs' -> '/usr/bin/toybox'
+Adding symlink 'xxd' -> '/usr/bin/toybox'
+Adding symlink 'yes' -> '/usr/bin/toybox'
+Adding symlink 'zcat' -> '/usr/bin/toybox'
+Leaving 'bin/'.
+Creating 'sbin/'...
+Adding 'arp'
+Adding 'devctl'
+Adding 'devinfo'
+Adding 'fs-nfs3'
+Adding 'if_up'
+Adding 'ifmcstat'
+Adding 'ifwatchd'
+Adding 'ip6addrctl'
+Adding 'ndp'
+Adding 'tcpdump'
+Adding 'traceroute'
+Adding 'traceroute6'
+Adding 'qconn'
+Adding 'sshd'
+Adding 'dumper'
+Adding 'random'
+Adding 'tracelogger'
+Adding 'wpa_cli'
+Adding 'wpa_passphrase'
+Adding 'wpa_supplicant'
+Leaving 'sbin/'.
+Creating 'lib/'...
+Adding 'libedit.so'
+Adding 'libexpat.so.2'
+Adding 'libfdt.so'
+Adding 'librpc.so.2'
+Adding 'libxo.so.0'
+Adding 'libcrypto.so.3'
+Adding 'libncursesw.so'
+Adding 'libqcrypto.so'
+Adding 'libssl.so.3'
+Adding 'libpam.so.2'
+Adding 'pam_deny.so'
+Adding 'pam_echo.so'
+Adding 'pam_exec.so'
+Adding 'pam_group.so'
+Adding 'pam_permit.so'
+Adding 'pam_qnx.so'
+Adding 'pam_rootok.so'
+Adding 'pam_secpol.so'
+Adding 'pam_self.so'
+Adding 'libbacktrace.so'
+Adding 'libc++.so.2'
+Adding 'libiconv.so'
+Adding 'libintl.so'
+Adding 'libpanelw.so'
+Adding 'libz.so'
+Leaving 'lib/'.
+Creating 'libexec/'...
+Adding 'sshd-session'
+Adding 'ssh-pkcs11-helper'
+Adding 'ssh-sk-helper'
+Adding 'sftp-server'
+Leaving 'libexec/'.
+Leaving 'usr/'.
+Creating 'etc/'...
+Creating 'pam.d/'...
+Adding 'login'
+Adding 'passwd'
+Adding 'su'
+Leaving 'pam.d/'.
+Creating 'system/'...
+Leaving 'system/'.
+Adding 'profile'
+Adding 'qcrypto.conf'
+Adding 'dhcpcd.conf'
+Adding 'hosts'
+Adding 'netconfig'
+Adding 'protocols'
+Adding 'services'
+Adding 'pf.os'
+Adding symlink 'ssh' -> '/dev/shmem'
+Adding 'esh'
+Adding 'passwd'
+Adding 'shadow'
+Adding 'group'
+Creating 'hotspot/'...
+Adding 'firmware.bin'
+Adding 'nvram.txt'
+Adding 'firmware.clm_blob'
+Leaving 'hotspot/'.
+Creating 'wifi/'...
+Adding 'qwdi_wifi.conf'
+Leaving 'wifi/'.
+Adding 'wpa_supplicant.conf'
+Creating 'io-sock/'...
+Adding 'io-sock.conf'
+Leaving 'io-sock/'.
+Leaving 'etc/'.
+Creating 'dev/'...
+Adding symlink 'console' -> '/dev/ser1'
+Creating 'shmem/'...
+Adding 'sshd_config'
+Leaving 'shmem/'.
+Leaving 'dev/'.
+Creating 'var/'...
+Creating 'version/'...
+Adding 'gateway_version'
+Adding 'end_ecu_version'
+Leaving 'version/'.
+Creating 'chroot/'...
+Creating 'sshd/'...
+Leaving 'sshd/'.
+Leaving 'chroot/'.
+Creating 'run/'...
+Creating 'wpa_supplicant/'...
+Leaving 'wpa_supplicant/'.
+Leaving 'run/'.
+Creating 'certs/'...
+Adding 'ecu.key'
+Adding 'ecu.crt'
+Adding 'rootCA.crt'
+Leaving 'certs/'.
+Creating 'keys/'...
+Adding 'public_key_fn_dsa.bin'
+Adding 'public_key_ml_dsa.bin'
+Adding 'public_key_ecdsa.pem'
+Adding 'aead_key.bin'
+Leaving 'keys/'.
+Leaving 'var/'.
+Creating 'proc/'...
+Leaving 'proc/'.
+Creating 'home/'...
+Creating 'qnxuser/'...
+Leaving 'qnxuser/'.
+Leaving 'home/'.
+Creating 'root/'...
+Leaving 'root/'.
+Creating 'scripts/'...
+Adding 'startup.sh'
+Adding 'ssh-server.sh'
+Leaving 'scripts/'.
+Adding symlink 'tmp' -> '/var/tmp'
+Leaving '/'.
+Write metadata...
+Pad image file...

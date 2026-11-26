@@ -1,0 +1,12 @@
+init_hwinfo.o: \
+ /home/hegde/project/qnxworkspace/project_minimal/src/hardware/startup/boards/bcm2711/rpi4/init_hwinfo.c \
+ /home/hegde/project/qnxworkspace/project_minimal/src/hardware/startup/boards/../../../../install/usr/include/startup.h \
+ /home/hegde/project/qnxworkspace/project_minimal/src/hardware/startup/boards/../../../../install/usr/include/sys/startup.h \
+ /home/hegde/project/qnxworkspace/project_minimal/src/hardware/startup/boards/../../../../install/usr/include/aarch64/cpu_startup.h \
+ /home/hegde/project/qnxworkspace/project_minimal/src/hardware/startup/boards/../../../../install/usr/include/arm/armboth_startup.h \
+ /home/hegde/project/qnxworkspace/project_minimal/src/hardware/startup/boards/../../../../install/usr/include/sys/restore_ifs.h \
+ /home/hegde/project/qnxworkspace/project_minimal/src/hardware/startup/boards/../../../../install/usr/include/hw/hwinfo_private.h \
+ /home/hegde/project/qnxworkspace/project_minimal/src/hardware/startup/boards/../../../../install/usr/include/sys/hwinfo.h \
+ /home/hegde/project/qnxworkspace/project_minimal/src/hardware/startup/boards/public/hw/hwinfo_bcm2711.h \
+ /home/hegde/project/qnxworkspace/project_minimal/src/hardware/startup/boards/public/aarch64/bcm2711.h \
+ /home/hegde/project/qnxworkspace/project_minimal/src/hardware/startup/boards/bcm2711/mbox.h

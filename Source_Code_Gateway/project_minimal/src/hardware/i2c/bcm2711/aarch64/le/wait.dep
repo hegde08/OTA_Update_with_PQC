@@ -1,0 +1,4 @@
+wait.o: \
+ /home/hegde/project/qnxworkspace/project_minimal/src/hardware/i2c/bcm2711/wait.c \
+ /home/hegde/project/qnxworkspace/project_minimal/src/hardware/i2c/bcm2711/proto.h \
+ /home/hegde/project/qnxworkspace/project_minimal/src/hardware/i2c/../../../install/usr/include/aarch64/bcm2711.h

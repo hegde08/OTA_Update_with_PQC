@@ -1,0 +1,9 @@
+init_intrinfo.o: \
+ /home/hegde/project/qnxworkspace/project_minimal/src/hardware/startup/boards/bcm2711/init_intrinfo.c \
+ /home/hegde/project/qnxworkspace/project_minimal/src/hardware/startup/boards/bcm2711/init_intrinfo.h \
+ /home/hegde/project/qnxworkspace/project_minimal/src/hardware/startup/boards/../../../../install/usr/include/startup.h \
+ /home/hegde/project/qnxworkspace/project_minimal/src/hardware/startup/boards/../../../../install/usr/include/sys/startup.h \
+ /home/hegde/project/qnxworkspace/project_minimal/src/hardware/startup/boards/../../../../install/usr/include/aarch64/cpu_startup.h \
+ /home/hegde/project/qnxworkspace/project_minimal/src/hardware/startup/boards/../../../../install/usr/include/arm/armboth_startup.h \
+ /home/hegde/project/qnxworkspace/project_minimal/src/hardware/startup/boards/../../../../install/usr/include/sys/restore_ifs.h \
+ /home/hegde/project/qnxworkspace/project_minimal/src/hardware/startup/boards/public/aarch64/bcm2711.h

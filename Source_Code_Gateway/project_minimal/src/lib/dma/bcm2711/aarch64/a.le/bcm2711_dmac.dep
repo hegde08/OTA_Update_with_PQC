@@ -1,0 +1,5 @@
+bcm2711_dmac.o: \
+ /home/hegde/project/qnxworkspace/project_minimal/src/lib/dma/bcm2711/bcm2711_dmac.c \
+ /home/hegde/project/qnxworkspace/project_minimal/src/lib/dma/public/hw/dma.h \
+ /home/hegde/project/qnxworkspace/project_minimal/src/lib/dma/../../../install/usr/include/aarch64/bcm2711.h \
+ /home/hegde/project/qnxworkspace/project_minimal/src/lib/dma/bcm2711/bcm2711_dmac.h

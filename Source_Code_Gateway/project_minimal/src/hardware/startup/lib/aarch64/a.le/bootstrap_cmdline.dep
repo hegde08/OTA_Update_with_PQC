@@ -1,0 +1,7 @@
+bootstrap_cmdline.o: \
+ /home/hegde/project/qnxworkspace/project_minimal/src/hardware/startup/lib/bootstrap_cmdline.c \
+ /home/hegde/project/qnxworkspace/project_minimal/src/hardware/startup/lib/public/startup.h \
+ /home/hegde/project/qnxworkspace/project_minimal/src/hardware/startup/lib/public/sys/startup.h \
+ /home/hegde/project/qnxworkspace/project_minimal/src/hardware/startup/lib/public/aarch64/cpu_startup.h \
+ /home/hegde/project/qnxworkspace/project_minimal/src/hardware/startup/lib/public/arm/armboth_startup.h \
+ /home/hegde/project/qnxworkspace/project_minimal/src/hardware/startup/lib/public/sys/restore_ifs.h

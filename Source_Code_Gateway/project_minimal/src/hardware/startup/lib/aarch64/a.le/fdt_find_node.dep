@@ -1,0 +1,3 @@
+fdt_find_node.o: \
+ /home/hegde/project/qnxworkspace/project_minimal/src/hardware/startup/lib/fdt_find_node.c \
+ /home/hegde/project/qnxworkspace/project_minimal/src/hardware/startup/lib/public/sys/libfdt_private.h

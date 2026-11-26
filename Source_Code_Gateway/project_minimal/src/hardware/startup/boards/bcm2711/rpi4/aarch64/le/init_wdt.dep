@@ -1,0 +1,9 @@
+init_wdt.o: \
+ /home/hegde/project/qnxworkspace/project_minimal/src/hardware/startup/boards/bcm2711/init_wdt.c \
+ /home/hegde/project/qnxworkspace/project_minimal/src/hardware/startup/boards/../../../../install/usr/include/startup.h \
+ /home/hegde/project/qnxworkspace/project_minimal/src/hardware/startup/boards/../../../../install/usr/include/sys/startup.h \
+ /home/hegde/project/qnxworkspace/project_minimal/src/hardware/startup/boards/../../../../install/usr/include/aarch64/cpu_startup.h \
+ /home/hegde/project/qnxworkspace/project_minimal/src/hardware/startup/boards/../../../../install/usr/include/arm/armboth_startup.h \
+ /home/hegde/project/qnxworkspace/project_minimal/src/hardware/startup/boards/../../../../install/usr/include/sys/restore_ifs.h \
+ /home/hegde/project/qnxworkspace/project_minimal/src/hardware/startup/boards/public/aarch64/bcm2711.h \
+ /home/hegde/project/qnxworkspace/project_minimal/src/hardware/startup/boards/bcm2711/bcm2711_startup.h

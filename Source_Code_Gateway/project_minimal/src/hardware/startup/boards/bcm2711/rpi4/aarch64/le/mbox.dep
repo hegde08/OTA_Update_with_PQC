@@ -1,0 +1,8 @@
+mbox.o: \
+ /home/hegde/project/qnxworkspace/project_minimal/src/hardware/startup/boards/bcm2711/mbox.c \
+ /home/hegde/project/qnxworkspace/project_minimal/src/hardware/startup/boards/bcm2711/mbox.h \
+ /home/hegde/project/qnxworkspace/project_minimal/src/hardware/startup/boards/../../../../install/usr/include/startup.h \
+ /home/hegde/project/qnxworkspace/project_minimal/src/hardware/startup/boards/../../../../install/usr/include/sys/startup.h \
+ /home/hegde/project/qnxworkspace/project_minimal/src/hardware/startup/boards/../../../../install/usr/include/aarch64/cpu_startup.h \
+ /home/hegde/project/qnxworkspace/project_minimal/src/hardware/startup/boards/../../../../install/usr/include/arm/armboth_startup.h \
+ /home/hegde/project/qnxworkspace/project_minimal/src/hardware/startup/boards/../../../../install/usr/include/sys/restore_ifs.h

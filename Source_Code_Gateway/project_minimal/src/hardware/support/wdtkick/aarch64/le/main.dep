@@ -1,0 +1,2 @@
+main.o: \
+ /home/hegde/project/qnxworkspace/project_minimal/src/hardware/support/wdtkick/main.c

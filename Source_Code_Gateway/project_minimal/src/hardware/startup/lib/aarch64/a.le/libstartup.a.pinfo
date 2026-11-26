@@ -1,0 +1,8 @@
+STATE=Desktop
+INSTALLDIR=aarch64le/usr/lib/
+INSTALLNAME=libstartup.a
+NAME=libstartup.a
+USER=hegde
+HOST=Shridharkrupa
+DATE=2026/08/22-19:05:20-UTC
+DESCRIPTION=startup library
