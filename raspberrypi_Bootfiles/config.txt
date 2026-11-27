@@ -1,0 +1,9 @@
+arm_64bit=1
+enable_uart=1
+enable_gic=1
+dtoverlay=uart3
+force_turbo=1
+arm_freq=1500
+
+kernel=u-boot.bin
+
